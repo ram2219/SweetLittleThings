@@ -1,0 +1,230 @@
+.header
+{
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #81F5FF, #FC7FB2);
+}
+
+.navbar
+{
+    background: #FC7FB2;
+}
+
+a 
+{
+    color: black;
+}
+
+.row-content 
+{
+    padding: 25px 0;
+    border-bottom: 1px ridge;
+}
+
+#homeCarousel
+{
+    border: solid #81F5FF;
+}
+
+#catalogStyle
+{
+    background-color: #81F5FF;
+}
+
+#submitFB
+{
+    background-color: #FC7FB2;
+}
+
+.btn-link
+{
+    color: white;
+}
+
+.content-background-1
+{
+    background-color: #81F5FF;
+    padding: 1%;
+}
+
+.content-background-2
+{
+    background-color: #FC7FB2;
+    overflow: auto;
+    padding: 50px;
+}
+
+.menu-background-1
+{
+    background-color: #81F5FF;
+    border: #81F5FF;
+    padding: 15px;
+}
+
+.menu-background-2
+{
+    background-color: #FC7FB2;
+    border: 0px solid #FC7FB2;
+    padding: 15px;
+}
+
+.menu-background-1:hover
+{
+    border: 10px;
+}
+
+body
+{
+    background-image: linear-gradient(to top right,rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .05)), url(./img/pink_blue_sky.jpg);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;     
+}
+
+footer
+{
+    width: 100%;
+    min-height: 85px;
+    background-image: linear-gradient(to bottom right, #FC7FB2, #81F5FF);
+}
+
+h1
+{
+    margin-left: 200px;
+    margin: 0;
+    font-family: "Pompiere", sans-serif;
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+}
+
+h2
+{
+    font-family: "Pompiere", sans-serif;
+    font-size: x-large;
+    color: white;
+    font-weight: bolder;
+}
+
+h3
+{
+    font-family: "Pompiere", sans-serif;
+    font-size: larger;
+    color: white;
+    font-weight: bolder;
+}
+
+#logo
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+}
+
+/* The sidebar menu */
+.sidebar 
+{
+    height: 100%; /* 100% Full-height */
+    width: 150px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #81F5FF,#FC7FB2); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+padding: 8px 8px 8px 32px;
+font-family: "Pompiere", sans-serif;
+font-size: 25px;
+color: white;
+display: block;
+transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover 
+{
+color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn 
+{
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn 
+{
+font-size: 20px;
+cursor: pointer;
+background-color: transparent;
+color: white;
+padding: 6px 16px;
+border-color: white;
+}
+
+.openbtn:hover 
+{
+background-color: #81F5FF;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#menuNav 
+{
+    margin-left: 0px;
+    transition: margin-left .5s; /*If you want a transition effect */
+} 
+
+#pageContent
+{
+    margin-left: 150px;
+    transition: margin-left .5s; /*If you want a transition effect */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 450px) 
+{
+    .sidebar 
+    {
+        padding-top: 15px;
+        width: 0px;
+    }
+    .sidebar a {font-size: 18px;}
+
+    #pageContent{margin-left: 0px;}
+}
+
+@media screen and (min-width: 768px)
+{
+    #open 
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+    #aboutme
+    {
+        height: 665px;
+    }
+}
+
+@media only screen and (max-width: 576px)
+{
+    .content-background-2
+    {
+        height: 525px;
+    }
+}
+
