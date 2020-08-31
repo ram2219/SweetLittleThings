@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {Carousel} from 'react-bootstrap';
+import InstagramEmbed from 'react-instagram-embed';
 import heart_cake from '../img/menu_item/heart_cake.png';
 import banana_bread from '../img/menu_item/banana_bread_2.png';
 import mm_cupcake_square from '../img/menu_item/mm_cupcake_square.png';
@@ -11,7 +13,17 @@ class Home extends Component
             <div className="container">
                 <div className="row row-content">
                     <div className="col-12 col-lg-6 mx-auto content-background-1">
-                       <img className='d-block w-100' src={heart_cake} alt=''/>
+                        <Carousel>
+                            <Carousel.Item>
+                                <img className='w-100' src={heart_cake} alt=''/>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img className='d-block w-100' src={banana_bread} alt=''/>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img className='d-block w-100' src={mm_cupcake_square} alt=''/>
+                            </Carousel.Item>
+                        </Carousel>
                     </div>
                     <div className="col col-lg-6 content-background-2">
                         <h1>
@@ -46,6 +58,18 @@ class Home extends Component
                     </div>
                     
                     <div className="col-md-6 content-background-1">
+                        <InstagramEmbed
+                            url='https://www.instagram.com/p/CCJftY6hFpC/'
+                            maxWidth={640}
+                            hideCaption={false}
+                            containerTagName='div'
+                            protocol=''
+                            injectScript
+                            onLoading={() => {}}
+                            onSuccess={() => {}}
+                            onAfterRender={() => {}}
+                            onFailure={() => {}}
+                        />
                     </div>
                 </div>
                 <div className="col"></div>
