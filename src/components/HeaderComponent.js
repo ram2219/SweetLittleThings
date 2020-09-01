@@ -26,9 +26,9 @@ class Header extends Component
         return(
             <React.Fragment>
                 <div className="header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col">
                                 <h1>Sweet Little Things</h1>
                                 <h1><small>Tasty Little Treats!</small></h1>
                             </div>
@@ -38,10 +38,12 @@ class Header extends Component
 
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <img src={logo} id='logo' alt=''/>
+                        <NavLink className="nav-link" to="/home">
+                            <img src={logo} id='logo' alt=''/>
+                        </NavLink>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <h2>
+                            <h3>
                                 <Nav navbar>
                                     <NavItem className="active">
                                         <NavLink className="nav-link" to="/home">
@@ -54,12 +56,12 @@ class Header extends Component
                                         </NavLink>
                                     </NavItem>
                                     <NavItem className="active">
-                                        <NavLink className="nav-link" to="/contactus">
+                                        <NavLink className="nav-link" to="/contact">
                                             <i className="fa fa-address-card fa-lg" /> Contact Us
                                         </NavLink>
                                     </NavItem>
                                 </Nav>
-                            </h2>
+                            </h3>
                         </Collapse>
                     </div>
                 </Navbar>

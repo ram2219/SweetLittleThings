@@ -12,7 +12,15 @@ class Home extends Component
         return(
             <div className="container">
                 <div className="row row-content">
-                    <div className="col-12 col-lg-6 mx-auto content-background-1">
+                    <div className="col"></div>
+                    <div className="col-12 col-lg-9 col-xl-7">
+                        <h1>Welcome To Sweet Little Things!</h1>
+                    </div>
+                    <div className="col"></div>
+                </div>
+                <div className="row row-content">
+
+                    <div className="col-12 col-md-6 mx-auto content-background-1" id='carousel'>
                         <Carousel>
                             <Carousel.Item>
                                 <img className='w-100' src={heart_cake} alt=''/>
@@ -25,14 +33,14 @@ class Home extends Component
                             </Carousel.Item>
                         </Carousel>
                     </div>
-                    <div className="col col-lg-6 content-background-2">
-                        <h1>
+                    <div className="col col-lg-6 content-background-2" id='ad'>
+                        <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                             deserunt mollit anim id est laborum."
-                        </h1>
+                        </h2>
                     </div>
                 </div>
                 <div className="row" style={{marginTop: 25}}>
@@ -42,7 +50,7 @@ class Home extends Component
                 </div>
                 <div className="row row-content">
                     <div id="aboutme" className="col-md-6 content-background-2">
-                        <h1>
+                        <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Elementum integer enim neque volutpat. Pellentesque elit eget gravida cum sociis natoque penatibus et. Odio pellentesque diam 
                             volutpat commodo sed. Viverra vitae congue eu consequat ac felis donec. 
@@ -54,7 +62,7 @@ class Home extends Component
                             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et 
                             quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
                             et dolorum fuga. 
-                        </h1>
+                        </h2>
                     </div>
                     
                     <div className="col-md-6 content-background-1">

@@ -93,7 +93,7 @@ h1
     margin-left: 200px;
     margin: 0;
     font-family: "Pompiere", sans-serif;
-    font-size: xx-large;
+    font-size: 62px;
     color: white;
     font-weight: bolder;
 }
@@ -101,7 +101,7 @@ h1
 h2
 {
     font-family: "Pompiere", sans-serif;
-    font-size: x-large;
+    font-size: 40px;
     color: white;
     font-weight: bolder;
 }
@@ -109,7 +109,7 @@ h2
 h3
 {
     font-family: "Pompiere", sans-serif;
-    font-size: larger;
+    font-size: x-large;
     color: white;
     font-weight: bolder;
 }
@@ -213,6 +213,14 @@ background-color: #81F5FF;
     #aboutme
     {
         height: 777px;
+    }   
+    #carousel
+    {
+        height: 360px;
+    }
+    #ad
+    {
+        height: 360px;
     }
 }
 
@@ -222,6 +230,15 @@ background-color: #81F5FF;
     {
         height: 907px;
     }
+    #carousel
+    {
+        height: 480px;
+    }
+    #ad
+    {
+        height: 480px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px)
@@ -229,6 +246,14 @@ background-color: #81F5FF;
     #aboutme
     {
         height: 1017px;
+    }
+    #carousel
+    {
+        height: 570px;
+    }
+    #ad
+    {
+        height: 570px;
     }
 }
 
@@ -239,4 +264,3 @@ background-color: #81F5FF;
         height: 525px;
     }
 }
-
