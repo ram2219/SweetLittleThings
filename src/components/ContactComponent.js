@@ -8,7 +8,7 @@ class Contact extends Component
             <div className="container">
                 <Row className="row row-content">
                     <Col className="col-12">
-                        <h2>Send us your Feedback</h2>
+                        <h1>Send us your Feedback</h1>
                     </Col>
                 </Row>
                 <Row style={{padding: 25}}>

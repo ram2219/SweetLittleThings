@@ -23,13 +23,13 @@ class Home extends Component
                     <Col xs={12} md={6} className="mx-auto content-background-1" id='carousel'>
                         <Carousel>
                             <Carousel.Item>
-                                <img className='w-100' src={heart_cake} alt=''/>
+                                <img className='w-100' src={heart_cake} alt='Heart Cake'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img className='d-block w-100' src={banana_bread} alt=''/>
+                                <img className='d-block w-100' src={banana_bread} alt='Banana Bread'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img className='d-block w-100' src={mm_cupcake_square} alt=''/>
+                                <img className='d-block w-100' src={mm_cupcake_square} alt='Mickey Mouse Cupcakes'/>
                             </Carousel.Item>
                         </Carousel>
                     </Col>
