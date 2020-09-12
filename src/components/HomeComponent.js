@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Carousel} from 'react-bootstrap';
+import {Col, Row} from 'reactstrap';
 import InstagramEmbed from 'react-instagram-embed';
 import heart_cake from '../img/menu_item/heart_cake.png';
 import banana_bread from '../img/menu_item/banana_bread_2.png';
@@ -11,16 +12,15 @@ class Home extends Component
     {
         return(
             <div className="container">
-                <div className="row row-content">
-                    <div className="col"></div>
-                    <div className="col-12 col-lg-9 col-xl-7">
+                <Row className="row-content">
+                    <Col />
+                    <Col xs={12} lg={8} xl={7}>
                         <h1>Welcome To Sweet Little Things!</h1>
-                    </div>
-                    <div className="col"></div>
-                </div>
-                <div className="row row-content">
-
-                    <div className="col-12 col-md-6 mx-auto content-background-1" id='carousel'>
+                    </Col>
+                    <Col />
+                </Row>
+                <Row className="row-content">
+                    <Col xs={12} md={6} className="mx-auto content-background-1" id='carousel'>
                         <Carousel>
                             <Carousel.Item>
                                 <img className='w-100' src={heart_cake} alt=''/>
@@ -32,8 +32,8 @@ class Home extends Component
                                 <img className='d-block w-100' src={mm_cupcake_square} alt=''/>
                             </Carousel.Item>
                         </Carousel>
-                    </div>
-                    <div className="col col-lg-6 content-background-2" id='ad'>
+                    </Col>
+                    <Col xs={12} lg={6} className="content-background-2" id='ad'>
                         <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                             dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -41,15 +41,15 @@ class Home extends Component
                             eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                             deserunt mollit anim id est laborum."
                         </h2>
-                    </div>
-                </div>
-                <div className="row" style={{marginTop: 25}}>
-                    <div className="col">
+                    </Col>
+                </Row>
+                <Row style={{marginTop: 25}}>
+                    <Col>
                         <h1 className="text-center">About Me!</h1>
-                    </div>             
-                </div>
-                <div className="row row-content">
-                    <div id="aboutme" className="col-md-6 content-background-2">
+                    </Col>             
+                </Row>
+                <Row className="row-content">
+                    <Col md={6} id="aboutme" className="content-background-2">
                         <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Elementum integer enim neque volutpat. Pellentesque elit eget gravida cum sociis natoque penatibus et. Odio pellentesque diam 
@@ -63,9 +63,9 @@ class Home extends Component
                             quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum
                             et dolorum fuga. 
                         </h2>
-                    </div>
+                    </Col>
                     
-                    <div className="col-md-6 content-background-1">
+                    <Col md={6} className="content-background-1">
                         <InstagramEmbed
                             url='https://www.instagram.com/p/CCJftY6hFpC/'
                             maxWidth={640}
@@ -78,9 +78,8 @@ class Home extends Component
                             onAfterRender={() => {}}
                             onFailure={() => {}}
                         />
-                    </div>
-                </div>
-                <div className="col"></div>
+                    </Col>
+                </Row>
             </div>
         )
     }

@@ -7,6 +7,7 @@
 .navbar
 {
     background: #FC7FB2;
+    padding: 0px;
 }
 
 a 
@@ -33,6 +34,7 @@ a
 #submitFB
 {
     background-color: #FC7FB2;
+    border: #FC7FB2;
 }
 
 .btn-link
@@ -93,7 +95,7 @@ h1
     margin-left: 200px;
     margin: 0;
     font-family: "Pompiere", sans-serif;
-    font-size: 62px;
+    font-size: 50px;
     color: white;
     font-weight: bolder;
 }
@@ -108,6 +110,7 @@ h2
 
 h3
 {
+    margin: 0;
     font-family: "Pompiere", sans-serif;
     font-size: x-large;
     color: white;

@@ -5,31 +5,14 @@ import Footer from './FooterComponent';
 import Menu from './MenuComponent';
 import Contact from './ContactComponent';
 import {Switch, Route, Redirect} from "react-router-dom";
+
 class Main extends Component
 {
-    
     render()
     {
-        const HomePage = () => 
-        {
-            return(
-                <Home/>
-            )
-        }
-
-        const MenuPage = () => 
-        {
-            return(
-                <Menu/>
-            )
-        }
-
-        const ContactPage = () => 
-        {
-            return(
-                <Contact/>
-            )
-        }
+        const HomePage = () => {return(<Home/>)}
+        const MenuPage = () => {return(<Menu/>)}
+        const ContactPage = () => {return(<Contact/>)}
 
         return(
         <React.Fragment>

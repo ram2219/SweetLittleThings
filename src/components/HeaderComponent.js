@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../img/menu_item/logo.JPG'
+import {Col, Row} from 'reactstrap';
 
 class Header extends Component
 {
@@ -27,16 +28,16 @@ class Header extends Component
             <React.Fragment>
                 <div className="header">
                     <div className="container">
-                        <div className="row">
-                            <div className="col">
+                        <Row>
+                            <Col>
                                 <h1>Sweet Little Things</h1>
                                 <h1><small>Tasty Little Treats!</small></h1>
-                            </div>
-                        </div>
+                            </Col>
+                        </Row>
                     </div>
                 </div>
 
-                <Navbar dark sticky="top" expand="md">
+                <Navbar dark sticky="top" expand="sm">
                     <div className="container">
                         <NavLink className="nav-link" to="/home">
                             <img src={logo} id='logo' alt=''/>
