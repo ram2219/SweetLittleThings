@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Carousel} from 'react-bootstrap';
 import {Col, Row} from 'reactstrap';
+import Header from './HeaderComponent';
 import InstagramEmbed from 'react-instagram-embed';
 import heart_cake from '../img/menu_item/heart_cake.png';
 import banana_bread from '../img/menu_item/banana_bread_2.png';
@@ -11,7 +12,9 @@ class Home extends Component
     render()
     {
         return(
-            <div className="container">
+        <React.Fragment>
+            <Header/>
+            <div className="container page">
                 <Row className="row-content">
                     <Col />
                     <Col xs={12} lg={8} xl={7}>
@@ -20,19 +23,20 @@ class Home extends Component
                     <Col />
                 </Row>
                 <Row className="row-content">
-                    <Col xs={12} md={6} className="mx-auto content-background-1" id='carousel'>
+                    <Col xs={12} lg={6} className=" content-background-1" id='homeCarousel'>
                         <Carousel>
                             <Carousel.Item>
-                                <img className='w-100' src={heart_cake} alt='Heart Cake'/>
+                                <img className='img-fluid d-block w-100 mx-auto' src={heart_cake} alt='Heart Cake'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img className='d-block w-100' src={banana_bread} alt='Banana Bread'/>
+                                <img className='img-fluid d-block w-100' src={banana_bread} alt='Banana Bread'/>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img className='d-block w-100' src={mm_cupcake_square} alt='Mickey Mouse Cupcakes'/>
+                                <img className='img-fluid d-block w-100' src={mm_cupcake_square} alt='Mickey Mouse Cupcakes'/>
                             </Carousel.Item>
                         </Carousel>
                     </Col>
+                    
                     <Col xs={12} lg={6} className="content-background-2" id='ad'>
                         <h2>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -81,6 +85,7 @@ class Home extends Component
                     </Col>
                 </Row>
             </div>
+        </React.Fragment>
         )
     }
 }

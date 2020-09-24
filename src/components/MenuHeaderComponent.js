@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import { Nav, Navbar, NavbarToggler, Collapse, NavItem} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../img/menu_item/logo.JPG';
-import {Col, Row} from 'reactstrap';
+import {Col, Row, Button} from 'reactstrap';
 
-class Header extends Component
+class MenuHeader extends Component
 {
     constructor(props) {
         super(props);
@@ -13,6 +13,7 @@ class Header extends Component
           isNavOpen: false
         };
         
+        this.openNav = this.openNav.bind(this);
         this.toggleNav = this.toggleNav.bind(this);
     }
 
@@ -21,11 +22,30 @@ class Header extends Component
             isNavOpen: !this.state.isNavOpen
         });
     }
+
+    openNav() 
+    { 
+        if(window.innerWidth > 450)
+        {
+            document.getElementById("responsiveHeader").style.marginLeft = "150px";
+            document.getElementById("pageContent").style.marginLeft = "150px";
+            document.getElementById("menuSideBar").style.width = "150px";
+            document.getElementById("menuNav").style.marginLeft = "150px";
+            document.getElementById("open").style.display = "none";
+        }
+        else
+        {
+            document.getElementById("open").style.display = "none";
+            document.getElementById("menuSideBar").style.width = "150px";
+            document.getElementById("menuNav").style.marginLeft = "150px";
+        }
+    }
+
     render()
     {
         return(
             <React.Fragment>
-                <div className="header">
+                <div id="responsiveHeader" className="header">
                     <div className="container">
                         <Row>
                             <Col>
@@ -35,9 +55,13 @@ class Header extends Component
                         </Row>
                     </div>
                 </div>
-
-                <Navbar dark sticky="top" expand="sm">
+                <Navbar id="menuNav" dark sticky="top" expand="sm">
                     <div className="container">
+                        <Button id="open"
+                            onClick={this.openNav}
+                            className="openbtn">
+                            <h3>Catalog</h3>
+                        </Button>
                         <NavLink className="nav-link" to="/home">
                             <img src={logo} id='logo' alt=''/>
                         </NavLink>
@@ -70,4 +94,4 @@ class Header extends Component
     }
 }
 
-export default Header;
+export default MenuHeader;

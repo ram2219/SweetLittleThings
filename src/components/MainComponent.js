@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Home from './HomeComponent'
-import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Menu from './MenuComponent';
 import Contact from './ContactComponent';
@@ -16,7 +15,6 @@ class Main extends Component
 
         return(
         <React.Fragment>
-            <Header/>
             <Switch>
                 <Route path='/home' component={HomePage} />
                 <Route path='/menu' component={MenuPage} />

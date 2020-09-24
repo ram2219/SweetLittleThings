@@ -9,7 +9,7 @@ class App extends Component
   {
     return(
       <BrowserRouter>
-        <div className="background">
+        <div>
           <Main/>
         </div>
       </BrowserRouter>

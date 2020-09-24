@@ -26,7 +26,7 @@ class Footer extends Component
                             <a className="btn btn-social-icon btn-instagram" href="https://www.instagram.com/sweetlittlem_/?hl=en"><i className="fa fa-instagram"></i></a>
                             <a className="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i className="fa fa-facebook"></i></a>
                             <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>
-                            <a className="btn btn-social-icon btn-youtube" href="https://www.youtube.com/"><i className="fa fa-youtube"></i></a>
+                            <a className="btn btn-social-icon btn-google" href="https://www.youtube.com/"><i className="fa fa-youtube"></i></a>
                         </Col>
                         <Col sm={12} md={4} className="text-center">
                             <h3>

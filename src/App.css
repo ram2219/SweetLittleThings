@@ -81,6 +81,7 @@ body
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;     
+    transition: margin-left .5s; 
 }
 
 footer
@@ -168,25 +169,36 @@ margin-left: 50px;
 /* The button used to open the sidebar */
 .openbtn 
 {
-font-size: 20px;
-cursor: pointer;
-background-color: transparent;
-color: white;
-padding: 6px 16px;
-border-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 6px 16px;
+    border-color: transparent;
 }
 
-.openbtn:hover 
+.openbtn:hover
 {
-background-color: #81F5FF;
+    background-color:palevioletred;
+    border-color: transparent;
 }
+
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#menuNav 
+ #menuNav
 {
-    margin-left: 0px;
+    margin-left: 150px;
     transition: margin-left .5s; /*If you want a transition effect */
 } 
+
+#responsiveHeader
+{
+    margin-left: 150px;
+    transition: margin-left .5s; /*If you want a transition effect */
+}
+
+#open{display: none;}
 
 #pageContent
 {
@@ -199,12 +211,15 @@ background-color: #81F5FF;
 {
     .sidebar 
     {
-        padding-top: 15px;
+        padding-top: 10px;
         width: 0px;
     }
     .sidebar a {font-size: 18px;}
 
+    #menuNav{margin-left: 0px;}
     #pageContent{margin-left: 0px;}
+    #responsiveHeader{margin-left: 0px;}
+    #open{display: block;}
 }
 
 @media screen and (min-width: 768px)
